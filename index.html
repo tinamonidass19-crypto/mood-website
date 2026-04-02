@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Website</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin-top: 100px;
+        background: #f0f0f0;
+      }
+
+      button {
+        padding: 15px;
+        margin: 10px;
+        font-size: 18px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>How are you feeling today?</h1>
+    <button onclick="happyMood()">😃Happy</button>
+    <button onclick="sadMood()">😢Sad</button>
+    <button onclick="chillMood()">😎Chill</button>
+
+    <p id="quote">Select Your Mood</p>
+  </body>
+
+  <script>
+    function happyMood() {
+      document.body.style.background = "yellow";
+      document.getElementById("quote").innerText = "You are amazing!🤩";
+    }
+
+    function sadMood() {
+      document.body.style.background = "lightblue";
+      document.getElementById("quote").innerText = "It's Okay to be sad💙";
+    }
+
+    function chillMood() {
+      document.body.style.background = "lightgreen";
+      document.getElementById("quote").innerText = "Relax and Enjoy😎";
+    }
+  </script>
+</html>
